@@ -1,0 +1,15 @@
+.todo-item {
+  padding: 10px;
+  border-radius: 4px;
+}
+.todo-item:hover {
+  background: #EFF2F9;
+}
+.el-icon-close {
+  float: right;
+  color: #dcdfe6;
+}
+.el-icon-close:hover {
+  color: red;
+  cursor: pointer;
+}

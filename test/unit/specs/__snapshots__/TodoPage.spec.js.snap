@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todo.vue matches Todo snapshot 1`] = `
+<el-container class="todo-page">
+    <el-main>
+        <todoform-stub></todoform-stub>
+        <todolist-stub></todolist-stub>
+    </el-main>
+</el-container>
+`;
+
+exports[`Todo.vue matches TodoForm snapshot 1`] = `
+<el-container class="todo-form-container">
+    <el-main class="todo-form">
+        <el-form inline="true" class="todo-form-inline">
+            <el-row>
+                <el-col span="16">
+                    <el-input placeholder="Add new task here" autofocus="true" class="todo-form-input"></el-input>
+                </el-col>
+                <el-col span="2">
+                    <el-button type="primary" disabled="true" class="todo-form-button">Add</el-button>
+                </el-col>
+            </el-row>
+        </el-form>
+    </el-main>
+</el-container>
+`;
+
+exports[`Todo.vue matches TodoList snapshot 1`] = `
+<el-container class="todo-list-container">
+    <!---->
+    <el-main class="todo-list">
+        <todoitem-stub todos="," todo=""></todoitem-stub>
+        <todoitem-stub todos="," todo=""></todoitem-stub>
+    </el-main>
+</el-container>
+`;

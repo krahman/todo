@@ -1,0 +1,12 @@
+.todo-form {
+  padding: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.el-form-item {
+  margin-bottom: 0;
+}
+.todo-form-input {
+  width: 99%;
+}

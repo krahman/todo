@@ -16,6 +16,7 @@ module.exports = {
   },
   testPathIgnorePatterns: [
     '<rootDir>/test/e2e',
+    '<rootDir>/server/test',
   ],
   snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],
   setupFiles: ['<rootDir>/test/unit/setup'],

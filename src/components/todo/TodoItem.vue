@@ -4,7 +4,7 @@
       <el-checkbox v-model="todo.completed" :checked="todo.completed"
                    @change="updateTodo(todo)"/>
     </el-col>
-    <el-col :span="22">{{todo.activity}}</el-col>
+    <el-col :span="22" v-bind:class="{ completed: todo.completed }">{{todo.activity}}</el-col>
     <el-col :span="1">
       <i class="el-icon-close" @click="removeTodo(todo)"></i>
     </el-col>

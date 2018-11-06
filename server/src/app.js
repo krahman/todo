@@ -1,9 +1,10 @@
+/* eslint-disable no-console */
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
-const TodoServices = require('./services/TodoServices');
+const router = require('./router');
 
 const app = express();
 const port = process.env.PORT || 8081;
@@ -24,11 +25,7 @@ app.use(bodyParser.json({ type: 'application/json' }));
 app.use(cors());
 
 // Application routes
-app.route('/todos')
-  .get(TodoServices.getTodos)
-  .post(TodoServices.addTodo)
-  .delete(TodoServices.removeTodo)
-  .put(TodoServices.updateTodo);
+router(app);
 
 app.listen(port);
 console.log(`Listening on port ${port}`);
